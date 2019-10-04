@@ -24,7 +24,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "tsc": "tsc",
+    "tslint": "tslint --project ./tsconfig.json -c ./tslint.json -e src/**/*.{ts,tsx}",
+    "storybook": "start-storybook -p 9001 -c .storybook -s ./public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,5 +43,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-etc": "^1.7.0",
+    "tslint-react": "^4.1.0",
+    "tslint-react-hooks": "^2.2.1"
   }
 }
